@@ -1,40 +1,38 @@
-# FuzzAI
-# FuzzAI (Work in Progress)
+# FuzzAI Project Workspace
 
-This repository is the development space for our custom fuzzing tool **FuzzAI**.
+This repository is a shared workspace where we will build **FuzzAI**, a Python-based CLI fuzzing tool similar to ffuf.  
+The idea is to start simple and then slowly add AI-powered features like intelligent wordlist selection and GPT-style wordlist generation.
 
-This is where we will write code, test features, and slowly build the full
-AI-powered fuzzing tool together.
+Right now, this repo contains:
+- The starter CLI fuzzer (`fuzzai.py`)
+- Utility modules (HTTP client, wordlist loader)
+- Basic folder structure
+- A brief project outline inside the `/fuzzai` directory
 
----
-
-## 👋 Message for Bhavesh
-
-Hey Bhavesh,  
-I’ve sent you a GitHub collaboration invite — check your email or GitHub notifications.  
-Once you accept it, you can directly push, modify, and contribute to this project with me.
-
-Let’s build this thing together 🔥
+More features will be added step-by-step as we both contribute.
 
 ---
 
-## 🛠️ About the Project
 
-FuzzAI is a Python-based CLI fuzzing tool inspired by **ffuf**, but with future improvements like:
+## 📌 Project Brief
 
-- AI-based wordlist recommendation  
-- Natural-language wordlist generation (`-gpt "make numbers 1-100"`)  
-- Automatic response analysis  
-- Improved filters and smarter output  
+**FuzzAI** is a CLI fuzzing tool that:
 
-Right now, this repo contains only the **starter version** of the fuzzer —  
-simple, clean, easy-to-build-upon.
+- Takes a URL containing the keyword `FUZZ`
+- Reads a wordlist and replaces `FUZZ` with each word
+- Sends requests and shows status code + response length
+- Helps identify hidden paths, pages, APIs, etc.
 
-A brief description and explanation of the project is inside the main `fuzzai` folder.
+This is the **basic version** — AI-powered features will be added later:
+- AI wordlist recommendation
+- AI prompt-based wordlist generator (`-gpt`)
+- Automated response categorization
 
-More features will be added step-by-step.
+This repo will grow as we both contribute.
 
 ---
 
-## 📁 Project Structure
+## 🚀 How to Run
 
+```bash
+python fuzzai.py -u "https://example.com/FUZZ" -w wordlists/sample.txt -t 10
