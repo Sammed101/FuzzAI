@@ -1,0 +1,2 @@
+# FuzzAI
+Initial project
