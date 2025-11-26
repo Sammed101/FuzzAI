@@ -1,0 +1,12 @@
+admin
+login
+dashboard
+test
+api
+index
+config
+backup
+404
+200
+302
+500
