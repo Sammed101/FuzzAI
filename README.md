@@ -1,6 +1,6 @@
 # FuzzAI 🤖
 
-**AI-Powered Directory Fuzzing Tool**
+**AI-Powered Fuzzing Tool**
 
 ## Quick Start
 
@@ -23,11 +23,11 @@ python3 fuzzai.py -u https://target.com/FUZZ -w list.txt -fc 404 -mc 200
 
 ## Features
 
-✨ **AI Wordlist Selection** - Let AI choose the best wordlist  
-🤖 **GPT Generation** - Generate custom wordlists with OpenAI  
-🎯 **Advanced Filtering** - ffuf-style filtering (status, size, lines, words)  
-⚡ **Multi-threaded** - Fast concurrent fuzzing  
-🎨 **Colorized Output** - Beautiful terminal display  
+**AI Wordlist Selection** - Let AI choose the best wordlist  
+**GPT Generation** - Generate custom wordlists with OpenAI  
+**Advanced Filtering** - ffuf-style filtering (status, size, lines, words)  
+**Multi-threaded** - Fast concurrent fuzzing  
+**Colorized Output** - Beautiful terminal display  
 
 ## Commands
 
@@ -100,4 +100,4 @@ For authorized security testing only. Always obtain permission before testing sy
 
 ---
 
-Created with ❤️ by the FuzzAI team
+**Created with ❤️ By Sammed101 & Bhaveshs08**

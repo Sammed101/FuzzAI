@@ -112,7 +112,7 @@ class FuzzAILogger:
         
         status_colored = self._colorize(f"{status_code}", color)
         
-        print(f"{status_colored:15} {url:60} [Size: {size:>8}, Words: {words:>6}, Lines: {lines:>4}]")
+        print(f"{status_colored:15} {url:60} [Size:{size:>7}, Words:{words:>6}, Lines:{lines:>4}]")
     
     def stats(self, total, found, filtered, elapsed):
         """Print statistics"""
@@ -145,22 +145,21 @@ def log_banner():
     logger = get_logger()
     if not logger.no_color:
         banner = f"""
-{Colors.CYAN}{Colors.BOLD}
+{Colors.GREEN}{Colors.BOLD}
   ███████╗██╗   ██╗███████╗███████╗     █████╗ ██╗
   ██╔════╝██║   ██║╚══███╔╝╚══███╔╝    ██╔══██╗██║
   █████╗  ██║   ██║  ███╔╝   ███╔╝     ███████║██║
   ██╔══╝  ██║   ██║ ███╔╝   ███╔╝      ██╔══██║██║
   ██║     ╚██████╔╝███████╗███████╗    ██║  ██║██║
   ╚═╝      ╚═════╝ ╚══════╝╚══════╝    ╚═╝  ╚═╝╚═╝
-                       _____
 {Colors.RESET}
-  {Colors.MAGENTA}AI-Powered Directory Fuzzing Tool{Colors.RESET}
+        {Colors.RED}AI-Powered Fuzzing Tool{Colors.RESET}
   {Colors.GRAY}v1.0.0 | by Sammed101 & Bhaveshs08{Colors.RESET}
 {Colors.CYAN}{'─' * 50}{Colors.RESET}
 """
     else:
         banner = """
-  FUZZ_AI - AI-Powered Directory Fuzzing Tool
+  FUZZ_AI - AI-Powered Fuzzing Tool
   v1.0.0 | by Sammed101 & Bhaveshs08
   --------------------------------------------------
 """
