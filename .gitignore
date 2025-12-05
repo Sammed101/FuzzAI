@@ -1,0 +1,45 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated wordlists
+wordlists/generated/
+
+# Results folder
+results/
+
+# User configs
+*.json
+config.json
+.fuzzai/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Backup files
+*.bak
+*.tmp
+
+# Build / dist
+dist/
+build/
+*.egg-info
+
+# Python environment files
+pip-log.txt
+pythonenv*
