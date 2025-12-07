@@ -1,0 +1,10 @@
+admin
+login
+index.php
+robots.txt
+status/200
+status/404
+delay/1
+anything
+headers
+EOF
