@@ -58,10 +58,10 @@ Clean terminal formatting to highlight important findings.
 -h                  # Tool usage and all commands      
 ```
 ## Configuration
+Manually configure the SecLists directory.
+
 ```bash
-# Manually configure the SecLists directory.
-# If SecLists is not installed, FuzzAI will prompt you to install it or configure a custom wordlists folder.
-python3 fuzzai.py --config-seclists /path/to/SecLists
+python3 fuzzai.py --config-seclists /path/to/SecLists 
 
 # Set OpenAI API key (for GPT generation)
 python3 fuzzai.py --openai-key YOUR_KEY
@@ -79,21 +79,12 @@ python3 fuzzai.py -u https://target.com/FUZZ -gpt "numbers 1-200"  # Wordlist ge
 ```bash
 python3 fuzzai.py -u https://target.com/FUZZ -w list.txt  -mc 200  #  Match code 
 ```
-```bash
-python3 fuzzai.py -u https://site.com/FUZZ -ai "admin dashboard" -fc 404    # filter unwanted responses
-```
-```bash
-python3 fuzzai.py -u https://api.site.com/v1/FUZZ -ai "rest api" -mc 200,201   # API endpoint enumeration
-```
-```bash
-python3 fuzzai.py -u https://site.com/FUZZ -ai "common quick" -fc 404,403 -t 30 # Fast scan with filters
-```
 ## Troubleshooting
 Below are common issues you may encounter while installing or running FuzzAI, along with their solutions.
 
-1]**Error:** ModuleNotFoundError: No module named 'requests'.  
+1.**Error:** ModuleNotFoundError: No module named 'requests'.  
 **Cause:** package conflicts  
-**Solution:** Run `pip install -r requirements.txt` inside a virtual environment.
+**Fix:** Run `pip install -r requirements.txt` inside a virtual environment.
 ```bash
 #Using a virtual environment 
 python3 -m venv venv
@@ -101,15 +92,15 @@ source venv/bin/activate   # make sure it's activated
 pip install -r requirements.txt
 ```
 
-2]**SecLists not detected**  
-**Cause**: Tool cannot find SecLists on the system.  
+2.**SecLists not detected**    
+**Cause**: Tool cannot find SecLists on the system.    
 **Fix:** If you don’t have SecLists installed, FuzzAI will prompt you to install it by pressing 'y' or if your system has a folder that has Wordlists init configure it using command given below.
 ```bash
 python3 fuzzai.py --config-seclists /path/to/SecLists  # Shows the path towards the SecLists
 ```
 To install manually:
 ```bash
-sudo apt install seclists     # Kali Linux / Debian-based
+sudo apt install secists     # Kali Linux / Debian-based
 ```
 
 Or download manually:
@@ -133,8 +124,7 @@ FuzzAI/
     └── generated/           # Generated wordlists
 ```
 ## License
-[![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
-Apache License 2.0 — see LICENSE file.
+Apache License 2.0 — see [LICENSE](https://github.com/Sammed101/FuzzAI/edit/main/LICENSE) file.
 ## Disclaimer
 For authorized security testing only. Always obtain permission before testing systems you don't own.
 ---
