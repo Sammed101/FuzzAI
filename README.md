@@ -92,7 +92,7 @@ FuzzAI/
 
 ## License
 
-MIT License - See LICENSE file
+Apache License 2.0 — see LICENSE file.
 
 ## Disclaimer
 
