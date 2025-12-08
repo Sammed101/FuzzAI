@@ -1,6 +1,6 @@
 
 ╔══════════════════════════════════════════════════════════╗
-║                   INSTALLATION REQUIRED                   ║
+║                   INSTALLATION REQUIRED                  ║
 ╚══════════════════════════════════════════════════════════╝
 
 This project generator created the basic structure, but you need to
