@@ -82,7 +82,7 @@ python3 fuzzai.py -u https://target.com/FUZZ -w list.txt  -mc 200  #  Match code
 ## Troubleshooting
 Below are common issues you may encounter while installing or running FuzzAI, along with their solutions.
 
-1.**Error:** ModuleNotFoundError: No module named 'requests'.  
+1.**Error:** ModuleNotFoundError: No module named 'requests'/'colorama'/'urllib3'.  
 **Cause:** package conflicts  
 **Fix:** Run `pip install -r requirements.txt` inside a virtual environment.
 ```bash
