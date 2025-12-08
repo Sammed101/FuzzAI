@@ -10,4 +10,4 @@ Steps to contribute:
 
 We will review PRs and respond within 3 business days.
 
-Be respectful and constructive. See CODE_OF_CONDUCT.md for behavioural expectations.
+Be respectful and constructive. See [CODE_OF_CONDUCT.md](https://github.com/Sammed101/FuzzAI/edit/main/CODE_OF_CONDUCT.md) for behavioural expectations.
