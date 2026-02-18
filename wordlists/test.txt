@@ -1,3 +1,4 @@
+//This wordlist is just for testing the fuzzing initially 
 admin
 login
 index.php
